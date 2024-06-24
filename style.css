@@ -1,0 +1,160 @@
+{
+    outline: 2px solid red;
+}
+html{
+    scrollbar-color: transparent transparent;
+}
+body{
+    background-color: #000;
+    color: white;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(14, 4, 38, .8);
+    color: white;
+    z-index: 100;
+}
+.header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header h3{
+    position: absolute;
+    top: 6px;
+    left: 5%;
+    font-size: 22px;
+    color: rgba(138, 43, 226, .5);
+}
+#home{
+    position: absolute;
+    top: 28px;
+    right: 5%;
+}
+#sun{
+    position: absolute;
+    top: 28px;
+    right: 8.5%;
+}
+.mainDiv{
+    padding: 1%;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 8%;
+    justify-items: center;
+}
+.card{
+    background-color: #0E0426;
+    width: 400px;
+    height: 510px;
+    border-radius: 20px;
+    /*outline: 2px solid red;/**/
+}
+.card:hover{
+    box-shadow: 0 0  40px blueviolet;
+
+}
+.imgContainer{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.card h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: violet;
+
+}
+.card p{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80px;
+}
+.icons{
+    width: 100px;
+    position: relative;
+    left: calc(50% - 50px);
+    top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon:hover{
+    cursor: pointer;
+    stroke: blueviolet;
+}
+@media (max-width: 1350px) {
+    .mainDiv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 870px) {
+    .mainDiv{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 70px;
+    }
+    .card {
+        width: 400px;
+        height: 510px;
+    }
+    .card p{
+        font-size: 14px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #home{
+        top: 28px;
+        right: 5%;
+    }
+    #sun{
+        top: 28px;
+        right: 13%;
+    }
+}
+@media(max-width: 480px) {
+    .mainDiv{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 70px;
+    }
+    .header{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header h1{
+        font-size: 25px;
+    }
+    .header h3{
+        font-size: 15px;
+        top: 12px;
+    }
+    #home{
+        top: 28px;
+        right: 5%;
+    }
+    #sun{
+        top: 28px;
+        right: 13%;
+    }
+    .card {
+        width: 350px;
+        height: 510px;
+    }
+    .icons{
+        top: 18px;
+    }
+}
