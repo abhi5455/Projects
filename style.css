@@ -4,9 +4,15 @@
 html{
     scrollbar-color: transparent transparent;
 }
+:root{
+    --bg-color: black;
+    --card-bg-color: #0E0426;
+    --text-color: white;
+    --project-name-color: violet;
+}
 body{
-    background-color: #000;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 .header{
     position: fixed;
@@ -14,7 +20,7 @@ body{
     left: 0;
     width: 100%;
     background-color: rgba(14, 4, 38, .8);
-    color: white;
+    color: var(--text-color);
     z-index: 100;
 }
 .header h1{
@@ -34,10 +40,13 @@ body{
     top: 28px;
     right: 5%;
 }
-#sun{
+#sun, #moon{
     position: absolute;
     top: 28px;
     right: 8.5%;
+}
+#moon{
+    display: none;
 }
 .mainDiv{
     padding: 1%;
@@ -51,7 +60,7 @@ body{
     justify-items: center;
 }
 .card{
-    background-color: #0E0426;
+    background-color: var(--card-bg-color);
     width: 400px;
     height: 510px;
     border-radius: 20px;
@@ -75,7 +84,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 28px;
-    color: violet;
+    color: var(--project-name-color);
 
 }
 .card p{
