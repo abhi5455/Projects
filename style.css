@@ -143,12 +143,16 @@ body{
         top: 12px;
     }
     #home{
-        top: 28px;
+        top: 25px;
         right: 5%;
+        height: 21px;
+        width: 21px;
     }
     #sun{
-        top: 28px;
-        right: 13%;
+        top: 25px;
+        right: 14%;
+        height: 21px;
+        width: 21px;
     }
     .card {
         width: 350px;
