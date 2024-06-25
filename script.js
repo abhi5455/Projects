@@ -23,12 +23,14 @@ function lightTheme(){
     root.style.setProperty('--icon-color', 'black');
     root.style.setProperty('--icon-color-hover', 'blue');
     //root.style.setProperty('--card-shadow', '0 0  20px grey');
-    root.style.setProperty('--card-glow', '0 0  20px pink');
-    root.style.setProperty('--watermark','rgb(0,0,128, .8)');
+    root.style.setProperty('--card-glow', '0 0  25px rgba(0,0,128, .5)');
+    /*console.log(window.matchMedia('max-width: 480px').matches)
+    if(window.matchMedia('max-width: 480px').matches){
+        root.style.setProperty('--card-glow', '0 0  15px rgba(0,0,128, .5)');
+    }*/
+    root.style.setProperty('--watermark','rgba(0,0,128, .5)');
     header.style.backgroundColor = 'rgba(255,255,255,.6)';
-
     project.style.color="rgb(0,0,128, .8)";
-    root.style.setProperty('--watermark','lightgrey');
 }
 
 moon.addEventListener('click',darkTheme);
@@ -42,7 +44,10 @@ function darkTheme(){
     root.style.setProperty('--icon-color', 'white');
     root.style.setProperty('--icon-color-hover', 'blueviolet');
     root.style.setProperty('--card-shadow', 'none');
-    root.style.setProperty('--card-glow', '0 0  40px blueviolet');
+    root.style.setProperty('--card-glow', '0 0 40px blueviolet');
+    if(window.matchMedia('(max-width: 480px)').matches){
+        root.style.setProperty('--card-glow', '0 0  35px rgb(138, 43, 226,.8)');
+    }
     root.style.setProperty('--watermark','rgba(138, 43, 226, .5)')
     header.style.backgroundColor = 'rgba(14, 4, 38, .8)';
     project.style.color="white";

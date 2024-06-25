@@ -147,6 +147,9 @@ body{
     }
 }
 @media(max-width: 480px) {
+    :root {
+        --card-glow: 0 0  35px rgb(138, 43, 226,.8);
+    }
     .mainDiv{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 70px;
