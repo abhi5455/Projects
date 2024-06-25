@@ -9,6 +9,11 @@ html{
     --card-bg-color: #0E0426;
     --text-color: white;
     --project-name-color: violet;
+    --icon-color: white;
+    --icon-color-hover: blueviolet;
+    --card-shadow: none;
+    --card-glow: 0 0  40px blueviolet;
+    --watermark: rgba(138, 43, 226, .5);
 }
 body{
     background-color: var(--bg-color);
@@ -22,6 +27,7 @@ body{
     background-color: rgba(14, 4, 38, .8);
     color: var(--text-color);
     z-index: 100;
+    user-select: none;
 }
 .header h1{
     display: flex;
@@ -33,7 +39,7 @@ body{
     top: 6px;
     left: 5%;
     font-size: 22px;
-    color: rgba(138, 43, 226, .5);
+    color: var(--watermark);
 }
 #home{
     position: absolute;
@@ -64,10 +70,10 @@ body{
     width: 400px;
     height: 510px;
     border-radius: 20px;
-    /*outline: 2px solid red;/**/
+    box-shadow: var(--card-shadow);
 }
 .card:hover{
-    box-shadow: 0 0  40px blueviolet;
+    box-shadow: var(--card-glow);
 
 }
 .imgContainer{
@@ -78,6 +84,7 @@ body{
     height: 250px;
     display: flex;
     justify-content: center;
+    user-select: none;
 }
 .card h2{
     display: flex;
@@ -101,9 +108,12 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+.icon{
+    stroke: var(--icon-color);
+}
 .icon:hover{
     cursor: pointer;
-    stroke: blueviolet;
+    stroke: var(--icon-color-hover);
 }
 @media (max-width: 1350px) {
     .mainDiv {
@@ -162,6 +172,12 @@ body{
         right: 14%;
         height: 21px;
         width: 21px;
+    }
+    #moon{
+        top: 26px;
+        right: 14%;
+        height: 20px;
+        width: 20px;
     }
     .card {
         width: 350px;
