@@ -95,7 +95,7 @@ body{
     align-items: center;
     font-size: 28px;
     color: var(--project-name-color);
-
+    user-select: none;
 }
 .card p{
     text-align: center;
