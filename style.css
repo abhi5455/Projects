@@ -46,12 +46,15 @@ body{
     top: 28px;
     right: 5%;
 }
-#sun, #moon{
+#sun{
     position: absolute;
     top: 28px;
     right: 8.5%;
 }
 #moon{
+    position: absolute;
+    top: 28px;
+    right: 8.5%;
     display: none;
 }
 .mainDiv{
@@ -114,6 +117,7 @@ body{
 .icon:hover{
     cursor: pointer;
     stroke: var(--icon-color-hover);
+    transform: scale(1.1);
 }
 @media (max-width: 1350px) {
     .mainDiv {
