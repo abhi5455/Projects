@@ -122,6 +122,14 @@ body{
     .mainDiv {
         grid-template-columns: repeat(2, 1fr);
     }
+    #home{
+        top: 28px;
+        right: 5%;
+    }
+    #sun, #moon{
+        top: 28px;
+        right: 10%;
+    }
 }
 @media(max-width: 870px) {
     .mainDiv{
@@ -141,7 +149,7 @@ body{
         top: 28px;
         right: 5%;
     }
-    #sun{
+    #sun, #moon{
         top: 28px;
         right: 13%;
     }
