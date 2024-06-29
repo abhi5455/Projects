@@ -22,12 +22,7 @@ function lightTheme(){
     root.style.setProperty('--project-name-color', 'blue');
     root.style.setProperty('--icon-color', 'black');
     root.style.setProperty('--icon-color-hover', 'blue');
-    //root.style.setProperty('--card-shadow', '0 0  20px grey');
     root.style.setProperty('--card-glow', '0 0  25px rgba(0,0,128, .5)');
-    /*console.log(window.matchMedia('max-width: 480px').matches)
-    if(window.matchMedia('max-width: 480px').matches){
-        root.style.setProperty('--card-glow', '0 0  15px rgba(0,0,128, .5)');
-    }*/
     root.style.setProperty('--watermark','rgba(0,0,128, .5)');
     header.style.backgroundColor = 'rgba(255,255,255,.6)';
     project.style.color="rgb(0,0,128, .8)";
