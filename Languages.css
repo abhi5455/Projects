@@ -12,6 +12,8 @@
     user-select: none;
     width: 400px;
     display: none;
+    transform: scale(0);
+    transition: transform .5s ease-in-out;
     @media (max-width: 550px) {
         width: 300px;
         left: calc(50% - 165px);
@@ -98,5 +100,7 @@
     top: 0;
     left: 0;
     opacity: .85;
+    transform: scale(0);
+    transition: transform .1s ease-in-out;
     display: none;
 }

@@ -19,10 +19,14 @@ function displayTools(projectName){
         ProjectName.style.top=((window.innerHeight/2)-(height/2))+'px';
         blackBox.style.height=(document.body.offsetHeight+70)+'px';
     });
+    ProjectName.style.transform = 'scale(1)';
+    blackBox.style.transform = 'scale(1)';
 }
 
 blackBox.addEventListener('click',function(){
     blackBox.style.display = 'none';
+    ProjectName.style.transform = 'scale(0)';
+    blackBox.style.transform = 'scale(0)';
     ProjectName.style.display = 'none';
 });
 
