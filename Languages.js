@@ -11,9 +11,9 @@ function displayTools(projectName){
     blackBox.style.height=document.body.clientHeight+'px';
     blackBox.style.display = 'block';
     ProjectName.style.display = 'block';
+    blackBox.style.height=(document.body.offsetHeight+70)+'px';
     let height=parseFloat(window.getComputedStyle(ProjectName).height);
     ProjectName.style.top=((window.innerHeight/2)-(height/2))+'px';
-    blackBox.style.height=(document.body.offsetHeight+70)+'px';
     window.addEventListener('resize', function(){
         let height=parseFloat(window.getComputedStyle(ProjectName).height);
         ProjectName.style.top=((window.innerHeight/2)-(height/2))+'px';
