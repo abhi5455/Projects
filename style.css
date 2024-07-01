@@ -1,5 +1,6 @@
 html{
     scrollbar-color: transparent transparent;
+    scrollbar-width: none;
 }
 :root{
     --bg-color: black;
@@ -101,9 +102,9 @@ body{
     height: 80px;
 }
 .icons{
-    width: 100px;
+    width: 150px;
     position: relative;
-    left: calc(50% - 50px);
+    left: calc(50% - 75px);
     top: 15px;
     display: flex;
     justify-content: space-evenly;
@@ -135,7 +136,7 @@ body{
     }
     .card {
         width: 400px;
-        height: 510px;
+        height: 520px;
     }
     .card p{
         font-size: 14px;

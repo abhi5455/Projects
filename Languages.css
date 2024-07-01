@@ -1,0 +1,102 @@
+.languagesTools{
+    position: fixed;
+    top: 20%;
+    left: calc(50% - 215px);
+    background-color: var(--card-bg-color);
+    z-index: 155;
+    border-radius: 30px;
+    min-width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    user-select: none;
+    width: 400px;
+    display: none;
+    @media (max-width: 550px) {
+        width: 300px;
+        left: calc(50% - 165px);
+    }
+}
+.languagesTools h2{
+    color: var(--project-name-color);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.languagesTools h4{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+    color: var(--text-color);
+    opacity: .3;
+    margin-bottom: 25px;
+}
+.allLangIcon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 550px){
+        max-width: 300px;
+    }
+}
+.eachIconDiv{
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(65, 105, 225,.15);
+    @media(max-width: 550px){
+        width: 40px;
+        height: 40px;
+    }
+}
+.langIcon{
+    width: 35px;
+    height: 35px;
+    @media(max-width: 550px){
+        width: 25px;
+        height: 25px;
+    }
+}
+.langIconText{
+    position: absolute;
+    display: none;
+    user-select: none;
+    color: var(--text-color);
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+    @media(max-width: 550px){
+        font-size: 11px;
+    }
+}
+.eachIconDiv:hover{
+    cursor: pointer;
+    /*border: 1px dashed var(--text-color);/**/
+    .langIconText{
+        display: block;
+        color: rgb(255,255,255,.9)
+    }
+    .langIcon{
+        opacity: 0.15;
+    }
+}
+#blackBox{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .85;
+    display: none;
+}

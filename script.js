@@ -26,6 +26,7 @@ function lightTheme(){
     root.style.setProperty('--watermark','rgba(0,0,128, .5)');
     header.style.backgroundColor = 'rgba(255,255,255,.6)';
     project.style.color="rgb(0,0,128, .8)";
+    languageToolsLight();
 }
 
 moon.addEventListener('click',darkTheme);
@@ -46,4 +47,5 @@ function darkTheme(){
     root.style.setProperty('--watermark','rgba(138, 43, 226, .5)')
     header.style.backgroundColor = 'rgba(14, 4, 38, .8)';
     project.style.color="white";
+    languageToolsDark();
 }
