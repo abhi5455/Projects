@@ -13,7 +13,7 @@
     width: 400px;
     display: none;
     transform: scale(0);
-    transition: transform .5s ease-in-out;
+    transition: transform .4s ease-in-out;
     @media (max-width: 550px) {
         width: 300px;
         left: calc(50% - 165px);
