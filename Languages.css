@@ -81,11 +81,10 @@
     }
 }
 .eachIconDiv:hover{
-    cursor: pointer;
     /*border: 1px dashed var(--text-color);/**/
     .langIconText{
         display: block;
-        color: rgb(255,255,255,.9)
+        color: rgb(255,255,255,.9);
     }
     .langIcon{
         opacity: 0.15;
