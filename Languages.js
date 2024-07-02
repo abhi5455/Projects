@@ -28,7 +28,7 @@ blackBox.addEventListener('click',function(){
     setTimeout(() => {
         ProjectName.style.display = 'none';
         blackBox.style.display = 'none';
-    }, 350);
+    }, 400);
 });
 
 
