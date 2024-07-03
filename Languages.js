@@ -36,6 +36,7 @@ function languageToolsLight(){
     let langIconText=document.getElementsByClassName('langIconText');
     for(let i=0;i<langIconText.length;i++){
         langIconText[i].style.color = 'darkslategrey';
+        langIconText[i].style.opacity = '0.9';
     }
 }
 
@@ -43,5 +44,6 @@ function languageToolsDark(){
     let langIconText=document.getElementsByClassName('langIconText');
     for(let i=0;i<langIconText.length;i++){
         langIconText[i].style.color = 'white';
+        langIconText[i].style.opacity = '0.8';
     }
 }
