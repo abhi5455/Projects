@@ -51,10 +51,10 @@ function languageToolsDark(){
 
 //Updating Languages & Tools
 let langIconContainer=document.getElementById('langIconContainer');
-let ExpenseTracker = ['EXPENSE TRACKER', 'expense', 'html', 'css', 'JavaScript'];
-let LoginPage= ['LOGIN PAGE', 'loginPage', 'html', 'css', 'JavaScript'];
-let UnitConverter = ['UNIT CONVERTER', 'libra', 'html', 'css', 'JavaScript'];
-let GregorianCalendar = ['GREGORIAN CALENDAR', 'calendar', 'html', 'css', 'JavaScript'];
+let ExpenseTracker = ['Expense Tracker', 'expense', 'html', 'css', 'JavaScript'];
+let LoginPage= ['Login Page', 'loginPage', 'html', 'css', 'JavaScript'];
+let UnitConverter = ['Unit Converter', 'libra', 'html', 'css', 'JavaScript'];
+let GregorianCalendar = ['Gregorian Calendar', 'calendar', 'html', 'css', 'JavaScript'];
 
 function createLangIcon(projectName){
     langIconContainer.innerHTML='';

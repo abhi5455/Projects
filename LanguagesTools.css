@@ -18,12 +18,13 @@
         width: 300px;
         left: calc(50% - 165px);
     }
+    font-family: "Lato", sans-serif;
 }
 .languagesTools h2{
     color: var(--project-name-color);
     width: 100%;
     text-align: center;
-    text-transform: uppercase;
+    font-weight: normal;
     font-size: 25px;
 }
 .languagesTools h4{
