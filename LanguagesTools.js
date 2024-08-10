@@ -52,6 +52,7 @@ function languageToolsDark(){
 //Updating Languages & Tools
 let langIconContainer=document.getElementById('langIconContainer');
 let ExpenseTracker = ['Expense Tracker', 'expense', 'html', 'css', 'JavaScript'];
+let TodoList = ['Todo List', 'todo', 'html', 'css', 'JavaScript','react'];
 let LoginPage= ['Login Page', 'loginPage', 'html', 'css', 'JavaScript'];
 let UnitConverter = ['Unit Converter', 'libra', 'html', 'css', 'JavaScript'];
 let GregorianCalendar = ['Gregorian Calendar', 'calendar', 'html', 'css', 'JavaScript'];
@@ -63,6 +64,9 @@ function createLangIcon(projectName){
     }
     else if(projectName==='LoginPage'){
         appendIcon(LoginPage);
+    }
+    else if(projectName==='TodoList'){
+        appendIcon(TodoList);
     }
     else if(projectName==='UnitConverter'){
         appendIcon(UnitConverter);
