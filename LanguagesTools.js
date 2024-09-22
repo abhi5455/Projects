@@ -52,6 +52,7 @@ function languageToolsDark(){
 //Updating Languages & Tools
 let langIconContainer=document.getElementById('langIconContainer');
 let ExpenseTracker = ['Expense Tracker', 'expense', 'html', 'css', 'JavaScript'];
+let CineSeek = ['CineSeek', 'cineSeek', 'html', 'css', 'JavaScript','react'];
 let TodoList = ['Todo List', 'todo', 'html', 'css', 'JavaScript','react'];
 let LoginPage= ['Login Page', 'loginPage', 'html', 'css', 'JavaScript'];
 let UnitConverter = ['Unit Converter', 'libra', 'html', 'css', 'JavaScript'];
@@ -64,6 +65,9 @@ function createLangIcon(projectName){
     }
     else if(projectName==='LoginPage'){
         appendIcon(LoginPage);
+    }
+    else if(projectName==='CineSeek'){
+        appendIcon(CineSeek);
     }
     else if(projectName==='TodoList'){
         appendIcon(TodoList);
